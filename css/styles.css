@@ -1,143 +1,37 @@
-/* Default light mode styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: white;
-    color: black;
-    transition: background 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
-
-header {
-    background: #222;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #e8491d;
-}
-
-section {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 900px;
-    background: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: background 0.3s;
-}
-
-h2 {
-    color: #222;
-    border-bottom: 2px solid #e8491d;
-    padding-bottom: 10px;
-}
-
-.project, .job {
-    background: #35424a;
-    color: #ffffff;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 6px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: background 0.3s;
-}
-
-.skills li {
-    background: #35424a;
-    color: #ffffff;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 6px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: background 0.3s;
-}
-
-.testimonials blockquote {
-    background: #35424a;
-    color: #ffffff;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 6px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: background 0.3s;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #222;
-    color: #ffffff;
-}
-
-/* Dark mode styles */
 body.dark-mode {
     background-color: #121212;
     color: #ffffff;
 }
-
-body.dark-mode a {
-    color: #bb86fc;
-}
-
-body.dark-mode header, body.dark-mode section, body.dark-mode footer {
-    background-color: #1f1f1f;
-    color: #ffffff;
-}
-
-body.dark-mode .project, body.dark-mode .job, body.dark-mode .skills li, body.dark-mode .testimonials blockquote {
-    background-color: #2c2c2c;
-}
-
-/* Animations */
-.fade-in {
-    animation: fadeIn 1s ease-in;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-.slide-in {
-    animation: slideIn 0.5s ease-in-out;
-}
-
-@keyframes slideIn {
-    from { transform: translateY(20px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-}
-
-#dark-mode-toggle {
-    background: none;
-    border: none;
+header {
+    background-color: #007acc;
     color: white;
-    font-size: 1.5em;
-    cursor: pointer;
-    transition: color 0.3s;
+    padding: 20px;
+    text-align: center;
 }
-
-#dark-mode-toggle:hover {
-    color: #e8491d;
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+section {
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #007acc;
+    color: white;
 }
